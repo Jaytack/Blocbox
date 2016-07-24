@@ -68,11 +68,15 @@ p{
    }
  }
 
-/* extra large */
- @media (max-width:1163px) {
-  .container {
-    max-width:1000px;
+/* extra-large media query to target TV sets */
+@media tv and (min-width: 700px) and (orientation: landscape) { 
+   .container {
+     width: 680px;
+   }
   }
+/* end media query */
+
+
   header {
     max-width:1000px;
   }
