@@ -290,6 +290,27 @@ header {
  }
 
 
+ /* Pricing responsive 423px fix */
+ @media (min-width: 400px){
+   .box {
+     margin: 25px 50px;
+   }
+   .box.middle {
+     margin: 25px 50px;
+  }
+ }
+
+ /* Pricing responsive 768px fix */
+ @media (min-width: 768px){
+   .box {
+     margin: 50px 0;
+   }
+   .box.middle {
+     margin: 50px 0;
+   }
+ }
+
+
 /* TESTIMONIALS */
  .testimonials {
    padding:4em 0;
@@ -406,20 +427,6 @@ header {
  }
 
 
-/* Footer responsive 768px fix */
- @media (min-width: 768px){
-    footer p, footer nav ul{
-     padding: 0em 0;
-     text-align: center;
-   }
-
-    footer .left-footer-block {
-       margin: 1em 2% 0;
-   }
-   footer .logo{
-     padding: 0em 0 0em 1.5em;
-   }
- }
 
  /* Footer responsive 423px fix */
  @media (min-width: 400px){
@@ -438,4 +445,17 @@ header {
    }
  }
 
- 
+ /* Footer responsive 768px fix */
+ @media (min-width: 768px){
+    footer p, footer nav ul{
+     padding: 0em 0;
+     text-align: center;
+   }
+
+    footer .left-footer-block {
+       margin: 1em 2% 0;
+   }
+   footer .logo{
+     padding: 0em 0 0em 1.5em;
+   }
+ }
