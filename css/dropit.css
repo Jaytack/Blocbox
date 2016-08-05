@@ -10,12 +10,14 @@
 /* These styles assume you are using ul and li */
 .dropit {
     list-style: none;
-	padding: 0;
-	margin: 15px 0 0;
+	  padding: 0;
+	  margin: 0 10px 0;
     float:right;
     display:inline-block;
 }
-.dropit .dropit-trigger { position: relative; }
+.dropit .dropit-trigger { 
+    position: relative; 
+}
 .dropit .dropit-submenu {
     position: absolute;
     top: 100%;
@@ -24,8 +26,8 @@
     display: none;
     min-width: 100px;
     list-style: none;
-	padding: 20px;
-	margin: 20px 0 0;
+	  padding: 20px;
+	  margin: 20px 0 0;
 }
 
 .dropit .dropit-open .dropit-submenu { 
@@ -36,17 +38,49 @@
 }
 
  .dropit .dropit-open .dropit-submenu:after {
+  top: -8px;
+  right: 10px;
   content: " ";
+  width: 0;
   position: absolute;
   border-style: solid;
   border-width: 0 8px 8px;
   border-color: #FFFFFF transparent;
   display: block;
-  width: 0;
   z-index: 1;
-  top: -8px;
-  right: 10px;
  }
+
+ /*  setting dropup */
+
+ .dropit .dropit-setsubmenu {
+    position: absolute;
+    top: 100%;
+    right: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 100px;
+    list-style: none;
+    padding: 20px;
+    margin: -160px 0 0;
+}
+
+  .dropit .dropit-open .dropit-setsubmenu:after {
+
+   top: 98%;
+   right: 7px;
+   border: solid transparent;
+   content: " ";
+   height: 0;
+   width: 0;
+   position: absolute;
+   pointer-events: none;
+   border-top-color: #FFFFFF;
+   border-width: 10px;
+   margin-left: -10px;
+ }
+
+  /*  END setting dropup */
+
  .dropit .dropit-open .dropit-submenu li {
   display: block;
   margin-bottom: 20px;
