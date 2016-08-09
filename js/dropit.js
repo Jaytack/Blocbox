@@ -35,9 +35,14 @@
                             return false;
                         }
 
-                        // Hide open menus
+                        // Hide open menus ADD
                         settings.beforeHide.call(this);
                         $('.dropit-open').removeClass('dropit-open').find('.dropit-submenu').hide();
+                        settings.afterHide.call(this);
+
+                        // Hide open menus SETTING
+                        settings.beforeHide.call(this);
+                        $('.dropit-open').removeClass('dropit-open').find('.dropit-setsubmenu').hide();
                         settings.afterHide.call(this);
 
                         // Open this menu
