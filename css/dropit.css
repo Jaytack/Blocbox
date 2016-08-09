@@ -84,7 +84,7 @@
 
  /*  setting dropup */
 
-  .dropit .dropit-open .dropit-setsubmenu:after {
+   /* .dropit .dropit-open .dropit-setsubmenu:after {
 
    top: 98%;
    right: 7px;
@@ -98,6 +98,7 @@
    border-width: 10px;
    margin-left: -10px;
  }
+ */
 
   /*  END setting dropup */
 
